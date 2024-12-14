@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage"
+    android:background="@drawable/background1">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Keep Fit Man"
+            android:textColor="@color/white"
+            android:textSize="40dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/btnmap"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/background3"
+                android:elevation="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imgBtnMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/background3"
+                    android:src="@drawable/ic_baseline_map_24"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Map"
+                    android:textColor="@color/white"
+                    android:textSize="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnchat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/background3"
+                android:elevation="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/background3"
+                    android:src="@drawable/ic_baseline_chat_bubble_24"
+                    android:id="@+id/imgBtnChatBot"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Chatbot"
+                    android:textColor="@color/white"
+                    android:textSize="40dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/sos_sms_phonecall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/background3"
+                android:elevation="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/background3"
+                    android:src="@drawable/sos"
+                    android:id="@+id/img_sos_sms_phonecall"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="SOS"
+                    android:textColor="@color/white"
+                    android:textSize="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Calorie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/background3"
+                android:elevation="10dp"
+                android:orientation="vertical">
+
+                <ImageButton
+
+                    android:id="@+id/imgCalorie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/background3"
+                    android:src="@drawable/calories_128"
+                    android:tint="@color/white"
+                    tools:ignore="UseAppTint" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Calorie"
+                    android:textColor="@color/white"
+                    android:textSize="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
+

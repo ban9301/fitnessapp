@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sparkwomen.MainActivity"
+    android:background="@drawable/background1"
+    >
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/topleftoval"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="25dp"
+        android:layout_marginBottom="150dp"
+        android:src="@drawable/ic_baseline_logout_24"
+        android:tooltipText="Logout"
+        android:visibility="gone"
+        app:tint="@color/white" />
+
+
+    <View
+        android:id="@+id/topleftoval"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/top_left_corner_oval"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOS Call"
+        android:layout_above="@id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="cursive"
+        android:textSize="40sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/green_200"
+        android:background="@color/green_200"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginRight="50dp"
+            android:id="@+id/first"
+            android:layout_width="150dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="150dp"
+            android:background="@drawable/oval_purple_full"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_user"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/second"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_toRightOf="@id/first"
+            android:background="@drawable/oval_purple_full">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_bot"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMS Alert"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/third"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_below="@id/first"
+            android:layout_width="150dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_height="150dp"
+            android:background="@drawable/oval_purple_full">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/settings"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="50dp"
+        app:cornerRadius="100dp"
+        android:layout_width="200dp"
+        android:backgroundTint="#4CAF50"
+        android:textSize="18sp"
+        android:layout_height="60dp"
+        android:id="@+id/panicBtn"
+        android:text="PANIC"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/relativeLayout"/>
+
+
+</RelativeLayout>

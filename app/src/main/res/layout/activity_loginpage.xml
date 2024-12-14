@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.calorie.Loginpage"
+    android:background="@drawable/background1">
+
+    <Button
+        android:id="@+id/BTNback1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/green_200"
+        android:backgroundTintMode="add"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textColorHint="#43A047"
+        android:textSize="25dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="#4CAF50"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID: "
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:gravity="center"
+
+
+            />
+
+        <EditText
+            android:id="@+id/ETid1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Enter Your ID"
+            android:textColor="@color/white"
+
+            android:textColorHint="@color/white"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:layout_marginTop="20dp"
+    android:background="@color/green_200"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username: "
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/ETusername1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Username"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="25dp" />
+</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/BTNlogin2"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#4CAF50"
+        android:backgroundTintMode="add"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

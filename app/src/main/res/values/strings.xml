@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FitnessBAN2024</string>
+    <string name="speech_prompt"><font size = "25">Chat with me……</font></string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>

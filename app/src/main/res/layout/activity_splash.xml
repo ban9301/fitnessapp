@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sparkwomen.SplashActivity"
+    android:background="@drawable/background1"
+    >
+
+
+    <View
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="-30dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/topleftoval"
+        android:background="@drawable/top_left_corner_oval"/>
+
+    <TextView
+        android:id="@+id/sparkText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sparkImg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="42dp"
+        android:background="@color/green_200"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="SOS"
+        android:textColor="@color/white"
+        android:textSize="100sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/sparkImg"
+        android:layout_width="309dp"
+        android:layout_height="210dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/sos_icon"
+        android:tint="@color/green_200"
+        tools:ignore="UseAppTint" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slang"
+        android:layout_below="@id/sparkImg"
+
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="226dp"
+        android:layout_height="96dp"
+        android:layout_below="@id/slang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:backgroundTint="@color/green_200"
+        android:text="get started" />
+
+
+
+</RelativeLayout>
